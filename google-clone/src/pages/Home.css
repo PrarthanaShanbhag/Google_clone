@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 0;
+}
+.home__header{
+display:flex;
+justify-content:space-between;
+padding: 20px 20px;
+align-items: center;
+}
+
+.home__header a{
+   text-decoration: none;
+   font-size: 14px; 
+   color: rgba(0,0,0,0.87);
+   margin-right: 10px;
+   
+
+}
+
+.home__header a:hover{
+text-decoration: underline;
+}
+
+.home__headerRight{
+    display: flex;
+    align-items: center;
+    min-width: 13vw;
+    justify-content: space-between;
+}
+
+.home__headerRight > .MuiSvgIcon-root{
+    margin-right: 20px ; /*space to right of apps */
+}
+.home__body{
+    display:flex;
+    flex:1;/*If an element has flex: 1 , this means the size of all of the other elements will have the same width as their content, but the element with flex: 1 will have the remaining full space given to it.*/
+    margin-top:2%;
+    /*justify-content: center;*/
+    flex-direction: column;/*center the image*/
+    
+}
+.home__body>img{
+    object-fit: contain;/*maintain aspect ratio*/
+    height: 100px;
+}
+.home__footers{
+      
+    display: flex;
+    flex-direction: column;
+ 
+    
+    position:absolute;
+    bottom:0;
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    border-top: 0.5px solid lightgray;
+    width: 100vw;
+    
+
+}
